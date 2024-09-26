@@ -57,15 +57,29 @@
 /* grid dos produtos */
 
 #box {
+    display: flex;
+    position: relative;
     border: 4px solid #005429;
     margin: 200px;
     height: 50vh;
     width: 45vh;
     align-items: center;
+    left: 300px;
+    top: 50px;
 } 
 
 #preco {
     display: flex;
-    font-size: large;
+    font-size: xx-large;
     color: #005429;
+    padding-left: 50%; 
+    position: relative;
+    bottom: 300px;
+}
+
+#btt-comprar {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    bottom: 250px;
 }
