@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+#navbar {
+    background-color: #c1ff72;
+}
+
+#navbar ul {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+#navbar ul li {
+    display: inline-block;
+}
+
+#navbar ul li a {
+    color: #005429;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* barra pesquisa */
+#navbar input {
+    display: flex;
+    position: absolute;
+    right: 4%;
+    top: 10px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* botao pesquisar */
+#navbar button {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* fim navbar  */
+
+/* grid dos produtos */
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#box {
+    border: 4px solid #005429;
+    margin: 200px;
+} 
+
+/* caixa grande */
+#grid-externo {
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* pocisao das caixas */
+#grid-interno {
+    padding: 20px;
+    display: grid;
+    grid: repeat(2, 300px) / auto-flow 300px; 
+    gap: 5px;
+    row-gap: 40%;
+}
+
+/* caixas dos produtos */
+#grid-interno div {
+    display: flex;
+    align-content: top;
+    align-items: center;
+    border: 3px solid #005429;
+    width: 200px;
+  }
+
+  /* preço */
+#grid-interno div, h3 { 
+    display: flex;
+    flex-direction: column;
+}
+#btt-comprar {
+    background-color: #c1ff72;
+    margin-top: 55px;
+    width: 150px;
+    height: 30px;
+}
